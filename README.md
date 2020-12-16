@@ -13,7 +13,7 @@ Sub stock()
     Dim percent_change As Double
     
     
- For Each ws In Worksheets
+    For Each ws In Worksheets
      
     opening_price = ws.Cells(2, 3).Value
     volume = 0
@@ -71,16 +71,16 @@ Sub stock()
             Next i
    
     
-ws.Cells(1, 12).Value = "Ticker"
-ws.Cells(1, 13).Value = "Yearly Change"
-ws.Cells(1, 14).Value = "Percent Change"
-ws.Cells(1, 15).Value = "Total Stock Volume"
+    ws.Cells(1, 12).Value = "Ticker"
+    ws.Cells(1, 13).Value = "Yearly Change"
+    ws.Cells(1, 14).Value = "Percent Change"
+    ws.Cells(1, 15).Value = "Total Stock Volume"
 
-Next ws
+    Next ws
 
             
     
-End Sub
+    End Sub
 
 
 
